@@ -971,3 +971,11 @@ div#preview-container > div {
         height: 75px;
     }
 }
+
+@media screen and (max-width:480px) {
+  .c-paragraph > .text-output {
+    text-justify: distribute;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+}
