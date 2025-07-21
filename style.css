@@ -149,6 +149,7 @@ div#preview-container {
 
 .section-heading-title strong {
     position: relative;
+  display:inline-block
 }
 
 .section-heading-title strong:before {
