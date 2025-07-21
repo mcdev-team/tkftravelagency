@@ -736,6 +736,10 @@ div#preview-container > div {
 
 @media (max-width: 992px) and (min-width: 768px) {
 
+  .header-section .mega-menu-container .nav-menu-ul > .nav-spacing-x {
+    margin-left:20px!important
+  }
+
     .image-paint-section > .bg {
         background-size: 154% 97% !important;
         background-position: center;
