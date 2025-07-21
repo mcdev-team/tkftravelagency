@@ -698,13 +698,16 @@ div#preview-container > div {
     .destinations-slider .slick-next{
         right:20px
     }
+}
 
+@media (max-width: 1300px) and (min-width: 481px) {
     .cruise-slider .slick-prev{
         right: 35px;
     }
     .cruise-slider .slick-next{
         right:0
     }
+  
 }
 
 @media (max-width: 1200px) and (min-width: 768px) {
