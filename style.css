@@ -927,10 +927,6 @@ div#preview-container > div {
       position: relative;
       margin-bottom: 30px!important;
   }
-
-  .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop .site-mobile-logo {
-    display: block;
-  }
 }
 
 @media (max-width: 500px) {
