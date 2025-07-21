@@ -815,6 +815,10 @@ div#preview-container > div {
 }
 
 @media (max-width: 767px) and (min-width: 481px) {
+  .sticky-active .site-logo {
+    min-width:100px
+  }
+  
     .destination-slider-section .destinations-slider .c-column{
         margin: 0 7px!important;
       padding: 25px!important
