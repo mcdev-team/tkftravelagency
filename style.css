@@ -823,6 +823,10 @@ div#preview-container > div {
         margin: 0 7px!important;
       padding: 25px!important
     }
+
+  .cruise-with-confidence-section .cruise-slider .c-column{
+    margin: 0 15px!important;
+  }
 }
 
 @media (max-width: 767px) {
