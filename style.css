@@ -687,14 +687,14 @@ div#preview-container > div {
 
 @media (max-width: 1300px) and (min-width: 768px) {
 
-    .destinations-slider {
+    .destinations-slider, .cruise-slider {
         padding: 0 30px !important;
     }
 
-    .destinations-slider .slick-arrow.slick-prev{
+    .destinations-slider .slick-arrow.slick-prev, .cruise-slider .slick-prev{
         right: 55px;
     }
-    .destinations-slider .slick-arrow.slick-next{
+    .destinations-slider .slick-next, .cruise-slider .slick-next{
         right:20px
     }
 }
@@ -773,10 +773,6 @@ div#preview-container > div {
 
     .destinations-slider .slick-prev {
         right: 70px;
-    }
-
-    .destinations-slider .slick-next {
-        right: 20px;
     }
 
     .single-column-section .c-heading {
