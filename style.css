@@ -688,15 +688,22 @@ div#preview-container > div {
 
 @media (max-width: 1300px) and (min-width: 768px) {
 
-    .destinations-slider, .cruise-slider {
+    .destinations-slider {
         padding: 0 30px !important;
     }
 
-    .destinations-slider .slick-arrow.slick-prev, .cruise-slider .slick-prev{
+    .destinations-slider .slick-arrow.slick-prev{
         right: 55px;
     }
-    .destinations-slider .slick-next, .cruise-slider .slick-next{
+    .destinations-slider .slick-next{
         right:20px
+    }
+
+    .cruise-slider .slick-prev{
+        right: 35px;
+    }
+    .cruise-slider .slick-next{
+        right:0
     }
 }
 
