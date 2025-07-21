@@ -406,6 +406,14 @@ div#preview-container > div {
     width: 100% !important;
 }
 
+.cruise-slider .slick-track {
+  height:100%
+}
+
+.cruise-slider .slick-track .slick-slide>.inner{
+  justify-content: flex-start;
+}
+
 .cruise-slider .slick-arrow {
     top: -50px;
     z-index: 1;
