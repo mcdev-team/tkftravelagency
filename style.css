@@ -54,6 +54,10 @@
     transform: translate(3px, 3px);
 }
 
+.btn-vp .main-heading-group>div {
+  display:inline
+}
+
 .destinations-slider > .inner {
   transition: opacity 0.3s ease-in-out;
 }
