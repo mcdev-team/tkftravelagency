@@ -668,6 +668,11 @@ div#preview-container > div {
 }
 
 /* Responsive */
+@media screen and (min-width:993px){
+  .header-section .mega-menu-container .nav-menu-ul > .nav-spacing-x {
+    margin-left:40px!important
+  }
+}
 @media screen and (min-width:1300px) {
     .destination-slider-section .destinations-slider .slick-list {
         overflow: visible;
