@@ -842,6 +842,10 @@ div#preview-container > div {
   .cruise-with-confidence-section .cruise-slider .c-column{
     margin: 0 15px!important;
   }
+
+  .testimonials-slider .slick-list .slick-track .slick-slide {
+    margin: 0 10px!important;
+  }
 }
 
 @media (max-width: 767px) {
