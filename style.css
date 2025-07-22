@@ -698,14 +698,16 @@ div#preview-container > div {
     }
 }
 
+@media screen and (max-width:1300px) {
+  .destinations-slider > .inner {
+    margin-left:0!important
+  }
+}
+
 @media (max-width: 1300px) and (min-width: 768px) {
 
     .destinations-slider {
         padding: 0 30px !important;
-    }
-
-    .destinations-slider .slick-arrow.slick-prev{
-        right: 55px;
     }
 }
 
