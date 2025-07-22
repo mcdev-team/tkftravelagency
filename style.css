@@ -830,7 +830,7 @@ div#preview-container > div {
         display: flex!important;
     }
 
-  cruise-slider .slick-slide {
+  .cruise-slider .slick-slide {
     padding: 6px 6px 11px!important;
   }
 
