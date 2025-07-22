@@ -16,9 +16,39 @@
       let finalCSS = "";
 
       // ========== Inject Regular CSS ========== //
-      
-      // Handle external CSS links
       if (Array.isArray(config.css)) {
+        for (const item of config.css) {
+          if (typeof item === "string") {
+            // External CSS file
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = item;
+            document.head.appendChild(link);
+            console.log(`Injected external CSS file: ${item}`);
+          } else if (typeof item === "object") {
+            for (const [selector, ruleOrObject] of Object.entries(item)) {
+              let rules, force;
+      
+              if (typeof ruleOrObject === "object") {
+                rules = ruleOrObject.css;
+                force = ruleOrObject.force === true;
+              } else {
+                rules = ruleOrObject;
+                force = false;
+              }
+      
+              if (force || document.querySelector(selector)) {
+                finalCSS += `${selector} { ${rules} }\n`;
+                console.log(`Injected CSS: ${selector}${force ? " (forced)" : ""}`);
+              } else {
+                console.log(`Skipped CSS: ${selector}`);
+              }
+            }
+          }
+        }
+      }
+      
+      /* if (Array.isArray(config.css)) {
         config.css.forEach(cssItem => {
           if (typeof cssItem === "string") {
             const link = document.createElement("link");
@@ -49,7 +79,7 @@
             console.log(`Skipped CSS: ${selector}`);
           }
         }
-      }
+      }*/
 
       // ========== Inject Media Queries ========== //
       if (config.media && typeof config.media === "object") {
