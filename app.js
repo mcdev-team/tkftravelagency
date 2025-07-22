@@ -2,15 +2,18 @@ jQuery(document).ready(function ($) {
     const $deslider = $('.destinations-slider > .inner');
 
     if ($deslider.length && !$deslider.hasClass('slick-initialized')) {
-        $('<div class="custom-arrows"></div>').insertBefore($deslider);
+        $('<div class="outSlider-arrows"></div>').insertBefore($deslider);
 
-        $('.custom-arrows').append('<button class="custom-prev" type="button">←</button>');
-        $('.custom-arrows').append('<button class="custom-next" type="button">→</button>');
+        $('.custom-arrows').append('<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>');
+        $('.custom-arrows').append('<button class="slick-next slick-arrow out-next" type="button">Next</button>');
 
         $deslider.slick({
             slidesToShow: 3,
             autoplay: false,
             infinite: false,
+            appendArrows: $('.outSlider-arrows'),
+            prevArrow: $('.out-prev'),
+            nextArrow: $('.out-next'),
             responsive: [
                 {
                     breakpoint: 993, 
