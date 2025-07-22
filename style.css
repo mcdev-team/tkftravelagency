@@ -414,10 +414,10 @@ div#preview-container > div {
 }
 
 .cruise-slider .slick-arrow {
-    top: -50px;
     z-index: 1;
-    position: absolute !important;
-    left: unset !important;
+    position: relative;
+    left: auto;
+  right:auto;
     background-color: var(--color-white) !important;
     border-radius: var(--size-border-radius-full);
     width: var(--size-slick-arrow-width);
@@ -446,10 +446,6 @@ div#preview-container > div {
     background: var(--url-slick-next-arrow) no-repeat;
     background-size: 42%;
     background-position: 63%;
-}
-
-.cruise-slider .slick-prev {
-    right: 21px;
 }
 
 .cruise-slider > .inner {
@@ -699,16 +695,6 @@ div#preview-container > div {
     .destinations-slider {
         padding: 0 30px !important;
     }
-}
-
-@media (max-width: 1300px) and (min-width: 481px) {
-    .cruise-slider .slick-prev{
-        right: 35px;
-    }
-    .cruise-slider .slick-next{
-        right:0
-    }
-  
 }
 
 @media (max-width: 1200px) and (min-width: 768px) {
