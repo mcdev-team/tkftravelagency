@@ -50,19 +50,38 @@ jQuery(document).ready(function ($) {
         $crArrowContainer.append($crPrev).append($crNext);
 
         $crslider.slick({
-            slidesToShow: 5,
+            slidesToShow: 6,
             autoplay: false,
             appendArrows: $crArrowContainer,
             prevArrow: $crPrev,
             nextArrow: $crNext,
             responsive: [
                 {
+                    breakpoint: 1300, 
+                    settings: {
+                    slidesToShow: 5
+                    }
+                }, 
+                {
+                    breakpoint: 1180, 
+                    settings: {
+                    slidesToShow: 4
+                    }
+                },
+                {
                     breakpoint: 993, 
                     settings: {
                     slidesToShow: 3
                     }
-                }, {
+                },
+                {
                     breakpoint: 767, 
+                    settings: {
+                    slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 500, 
                     settings: {
                     slidesToShow: 1
                     }
