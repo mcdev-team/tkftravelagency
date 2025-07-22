@@ -399,7 +399,7 @@ div#preview-container > div {
   height:100%
 }
 
-.cruise-slider .slick-track .slick-slide>.inner{
+#app .cruise-slider .slick-track .slick-slide>.inner{
   justify-content: flex-start!important;
 }
 
