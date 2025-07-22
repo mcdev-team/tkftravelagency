@@ -344,16 +344,16 @@ div#preview-container > div {
     left: 0;
 }
 
-.destinations-slider > .inner {
+.destinations-slider > .inner, .outSlider-arrows {
     max-width: 1260px !important;
     margin: 0 auto;
 }
 
 .destinations-slider .slick-arrow {
-    top: -50px;
-    z-index: 1;
-    position: absolute !important;
-    left: unset !important;
+  z-index: 1;
+  position:relative;
+  left:auto;
+  right:auto;
     background-color: var(--color-white) !important;
     border-radius: var(--size-border-radius-full);
     width: var(--size-slick-arrow-width);
