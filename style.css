@@ -149,7 +149,8 @@ div#preview-container {
 
 .section-heading-title strong {
     position: relative;
-  display:inline-block
+  display:inline-block;
+  white-space-collapse: break-spaces;
 }
 
 .section-heading-title strong:before {
@@ -860,10 +861,6 @@ div#preview-container > div {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .section-heading-title h2 strong {
-        margin-left: 10px;
     }
 
     .your-journey-section .inner .c-row > .inner {
