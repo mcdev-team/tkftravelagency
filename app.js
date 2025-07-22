@@ -1,4 +1,5 @@
 jQuery(document).ready(function ($) {
+    // Destination slider
     const $deslider = $('.destinations-slider > .inner');
 
     if ($deslider.length && !$deslider.hasClass('slick-initialized')) {
@@ -37,7 +38,8 @@ jQuery(document).ready(function ($) {
         $(window).on('resize', updateDeSliderMargin);
     }
 
-    const $crslider = $('.cruise-slider > .inner > .inner');
+    // Cruise slider
+    const $crslider = $('.cruise-slider > .inner');
 
     if ($crslider.length && !$crslider.hasClass('slick-initialized')) {
         $('<div class="outSlider-arrows"></div>').insertBefore($crslider);
