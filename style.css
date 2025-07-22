@@ -438,8 +438,12 @@ div#preview-container > div {
     background-position: 63%;
 }
 
-.cruise-slider > .inner {
+#app .cruise-slider > .inner {
     flex-wrap: wrap;
+}
+
+#app .cruise-slider > .inner.slick-initialized {
+  display:block
 }
 
 .cruise-slider > .inner > .c-column {
