@@ -390,10 +390,6 @@ div#preview-container > div {
     background-position: 63%;
 }
 
-.destinations-slider .slick-prev {
-    right: 21px;
-}
-
 /* Featured resorts section */
 .featured-section .check-list-row {
     max-width: 953px;
@@ -709,9 +705,6 @@ div#preview-container > div {
     .destinations-slider .slick-arrow.slick-prev{
         right: 55px;
     }
-    .destinations-slider .slick-next{
-        right:20px
-    }
 }
 
 @media (max-width: 1300px) and (min-width: 481px) {
@@ -796,10 +789,6 @@ div#preview-container > div {
         display: none;
     }
 
-    .destinations-slider .slick-prev {
-        right: 70px;
-    }
-
     .single-column-section .c-heading {
         margin: 0 !important;
     }
@@ -865,14 +854,6 @@ div#preview-container > div {
 
     .slick-track {
         display: flex!important;
-    }
-
-    .destinations-slider .slick-next {
-        right: 10px;
-    }
-
-    .destinations-slider .slick-prev {
-        right: 50px;
     }
 
   .testimonials-section .testimonials-slider{
