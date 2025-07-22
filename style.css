@@ -731,6 +731,12 @@ div#preview-container > div {
     }
 }
 
+@media screen and (max-width:992px) and (min-width:481px){
+  .footer-bottom-section .c-row .c-column {
+      width: 100%;
+  }
+}
+
 @media (max-width: 992px) and (min-width: 768px) {
 
   .header-section .mega-menu-container .nav-menu-ul > .nav-spacing-x {
@@ -791,10 +797,6 @@ div#preview-container > div {
 
     .footer-bottom-section .copyright-text {
         margin: 10px 0;
-    }
-
-    .footer-bottom-section .c-row .c-column {
-        width: 100%;
     }
 }
 
