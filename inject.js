@@ -16,6 +16,20 @@
       let finalCSS = "";
 
       // ========== Inject Regular CSS ========== //
+      
+      // Handle external CSS links
+      if (Array.isArray(config.css)) {
+        config.css.forEach(cssItem => {
+          if (typeof cssItem === "string") {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = cssItem;
+            document.head.appendChild(link);
+            console.log(`Injected external CSS file: ${cssItem}`);
+          }
+        });
+      }
+      
       if (config.css && typeof config.css === "object") {
         for (const [selector, ruleOrObject] of Object.entries(config.css)) {
           let rules, force;
@@ -71,6 +85,19 @@
       }
 
       // ========== Inject Custom JS ========== //
+      if (Array.isArray(config.js)) {
+        config.js.forEach(script => {
+          if (typeof script === "string") {
+            const tag = document.createElement("script");
+            tag.src = script;
+            tag.async = true;
+            tag.onload = () => console.log(`Loaded external JS: ${script}`);
+            tag.onerror = () => console.error(`Failed to load external JS: ${script}`);
+            document.head.appendChild(tag);
+          }
+        });
+      }
+      
       if (Array.isArray(config.js)) {
         config.js.forEach(script => {
           if (!script.run) return;
