@@ -857,10 +857,7 @@ div#preview-container > div {
     }
 
     .section-heading-title h2 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        text-align:center!important
     }
 
     .your-journey-section .inner .c-row > .inner {
