@@ -280,10 +280,6 @@ div#preview-container > div {
     height: 145px;
 }
 
-.image-paint-section{
-
-}
-
 .image-paint-section.up-side{
   background: url(https://assets.cdn.filesafe.space/9yj6LUxLIMAPfJH3kcq3/media/686f3e0fe9ff4c6375b0c6cb.webp) no-repeat;
   background-size: 100% 100%;
@@ -679,7 +675,7 @@ div#preview-container > div {
 }
 
 @media screen and (max-width:1300px) {
-  .destinations-slider > .inner {
+  .destinations-slider > .inner, .cruise-slider > .inner {
     margin-left:0!important
   }
 }
