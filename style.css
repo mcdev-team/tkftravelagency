@@ -344,15 +344,17 @@ div#preview-container > div {
     left: 0;
 }
 
-.destinations-slider > .inner, .outSlider-arrows {
+.outSlider-arrows {
     max-width: 1260px !important;
-    margin: 0 auto;
 }
 
 .outSlider-arrows {
   display:flex;
   gap:10px;
-  justify-content:flex-end
+  justify-content:flex-end;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:20px;
 }
 
 .destinations-slider .slick-arrow {
