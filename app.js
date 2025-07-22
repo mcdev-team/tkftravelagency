@@ -97,34 +97,7 @@ jQuery(document).ready(function ($) {
         updateCrSliderMargin();
         $(window).on('resize', updateCrSliderMargin);
     }
-
-    // Cruise slider
-    /*jQuery(function($) {
-    $('.cruise-slider > .inner').slick({
-        slidesToShow: 4,
-        autoplay: false,
-        dots: false,
-        arrows: true,
-        infinite: false,
-        centerMode: false,
-        responsive: [
-        {
-            breakpoint: 993, 
-            settings: {
-            slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 767, 
-            settings: {
-            slidesToShow: 1
-            }
-        }
-        ]
-    });
-    });*/
-
-
+    
     // Testimonials slider
     $('.testimonials-slider > .inner').slick({
     slidesToShow: 3,
