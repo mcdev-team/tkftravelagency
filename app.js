@@ -4,8 +4,8 @@ jQuery(document).ready(function ($) {
     if ($deslider.length && !$deslider.hasClass('slick-initialized')) {
         $('<div class="outSlider-arrows"></div>').insertBefore($deslider);
 
-        $('.custom-arrows').append('<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>');
-        $('.custom-arrows').append('<button class="slick-next slick-arrow out-next" type="button">Next</button>');
+        $('.outSlider-arrows').append('<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>');
+        $('.outSlider-arrows').append('<button class="slick-next slick-arrow out-next" type="button">Next</button>');
 
         $deslider.slick({
             slidesToShow: 3,
