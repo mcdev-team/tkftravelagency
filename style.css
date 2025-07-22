@@ -349,6 +349,12 @@ div#preview-container > div {
     margin: 0 auto;
 }
 
+.outSlider-arrows {
+  display:flex;
+  gap:10px;
+  justify-content:flex-end
+}
+
 .destinations-slider .slick-arrow {
   z-index: 1;
   position:relative;
