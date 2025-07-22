@@ -399,12 +399,6 @@ div#preview-container > div {
     object-fit: cover;
 }
 
-.cruise-slider .slick-list {
-    overflow: visible;
-    max-width: 100%;
-    width: 100% !important;
-}
-
 .cruise-slider .slick-track {
   height:100%
 }
