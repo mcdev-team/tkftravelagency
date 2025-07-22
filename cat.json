@@ -69,6 +69,7 @@
             "css": "background-image:url(data:image/svg+xml,%3Csvg%20fill%3D%22%23105F91%22%20viewBox%3D%220%200%2043%2043%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M19.189%2013.322a1.322%201.322%200%2010-1.73%202.002l7.146%206.176-7.146%206.176a1.323%201.323%200%20101.73%202.002l8.304-7.177a1.323%201.323%200%20000-2.002l-8.304-7.177z%22%2F%3E%3C%2Fsvg%3E)",
             "force": true
         },
+        ".slick-theme-3 .slick-track,.slick-theme-3 .image-container div,.slick-theme-3 picture": "height:100%",
         ".slick-theme-3 .hl-image-picture": "padding:6px;border-radius:5px;background:var(--color-white)",
         ".slick-theme-3 .hl-image-picture:after": {
             "css": "content:attr(data-alt);font-family:'Poppins';font-size:18px;line-height:155%;text-align:center;padding-top:14px;padding-bottom:4px;display:block",
