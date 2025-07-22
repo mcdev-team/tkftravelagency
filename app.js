@@ -28,40 +28,55 @@ jQuery(document).ready(function ($) {
             ]
         });
 
-        function updateSliderMargin() {
-            const containerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
-            $deslider.css('margin-left', containerOffsetLeft);
+        function updateDeSliderMargin() {
+            const deContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
+            $deslider.css('margin-left', deContainerOffsetLeft);
         }
 
-        updateSliderMargin();
-        $(window).on('resize', updateSliderMargin);
+        updateDeSliderMargin();
+        $(window).on('resize', updateDeSliderMargin);
     }
-    
-    // Destination slider
-    /*$('.destinations-slider > .inner').slick({
-    slidesToShow: 3,
-    autoplay: false,
-    dots: false,
-    arrows: true,
-    infinite: false,
-    responsive: [
-        {
-            breakpoint: 993, 
-            settings: {
-            slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 767, 
-            settings: {
-            slidesToShow: 1
-            }
+
+    const $crslider = $('.cruise-slider > .inner > .inner');
+
+    if ($crslider.length && !$crslider.hasClass('slick-initialized')) {
+        $('<div class="outSlider-arrows"></div>').insertBefore($crslider);
+
+        $('.outSlider-arrows').append('<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>');
+        $('.outSlider-arrows').append('<button class="slick-next slick-arrow out-next" type="button">Next</button>');
+
+        $crslider.slick({
+            slidesToShow: 5,
+            autoplay: false,
+            appendArrows: $('.outSlider-arrows'),
+            prevArrow: $('.out-prev'),
+            nextArrow: $('.out-next'),
+            responsive: [
+                {
+                    breakpoint: 993, 
+                    settings: {
+                    slidesToShow: 3
+                    }
+                }, {
+                    breakpoint: 767, 
+                    settings: {
+                    slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+        function updateCrSliderMargin() {
+            const crContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
+            $crslider.css('margin-left', crContainerOffsetLeft);
         }
-        ]
-    });*/
+
+        updateCrSliderMargin();
+        $(window).on('resize', updateCrSliderMargin);
+    }
 
     // Cruise slider
-    jQuery(function($) {
+    /*jQuery(function($) {
     $('.cruise-slider > .inner').slick({
         slidesToShow: 4,
         autoplay: false,
@@ -84,7 +99,7 @@ jQuery(document).ready(function ($) {
         }
         ]
     });
-    });
+    });*/
 
 
     // Testimonials slider
