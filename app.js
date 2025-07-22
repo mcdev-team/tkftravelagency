@@ -8,9 +8,8 @@ jQuery(document).ready(function ($) {
         $('.outSlider-arrows').append('<button class="slick-next slick-arrow out-next" type="button">Next</button>');
 
         $deslider.slick({
-            slidesToShow: 3,
+            slidesToShow: 4,
             autoplay: false,
-            infinite: false,
             appendArrows: $('.outSlider-arrows'),
             prevArrow: $('.out-prev'),
             nextArrow: $('.out-next'),
