@@ -125,7 +125,7 @@
             "force": true
         },
         ".slick-theme-4 .hl-image-picture:after": {
-            "css": "content:attr(data-alt);font-family:'Inter';font-size:18px;line-height:140%;padding-left:12px;display:flex;align-items:center",
+            "css": "content:attr(data-alt);font-family:'Inter';font-size:18px;line-height:140%;padding-left:12px;display:flex;align-items:center;text-align:left",
             "force": true
         },
         ".featured-testimonials .c-column>.inner": "gap:20px",
