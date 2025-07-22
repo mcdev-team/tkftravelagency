@@ -28,6 +28,14 @@ jQuery(document).ready(function ($) {
                 }
             ]
         });
+
+        function updateSliderMargin() {
+            const containerOffsetLeft = $('.destination-slider-section > .inner').offset()?.left || 0;
+            $deslider.css('margin-left', containerOffsetLeft);
+        }
+
+        updateSliderMargin();
+        $(window).on('resize', updateSliderMargin);
     }
     
     // Destination slider
