@@ -682,7 +682,7 @@ div#preview-container > div {
 
 @media (max-width: 1300px) and (min-width: 768px) {
 
-    .destinations-slider {
+    .destinations-slider, .cruise-slider {
         padding: 0 30px !important;
     }
 }
