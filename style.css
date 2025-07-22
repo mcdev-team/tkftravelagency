@@ -732,8 +732,8 @@ div#preview-container > div {
 }
 
 @media screen and (max-width:992px) and (min-width:481px){
-  .footer-bottom-section .c-row .c-column {
-      width: 100%;
+  .footer-bottom-section .c-paragraph .text-output {
+    text-align:center
   }
 }
 
