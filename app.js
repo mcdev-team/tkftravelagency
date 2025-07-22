@@ -3,17 +3,18 @@ jQuery(document).ready(function ($) {
     const $deslider = $('.destinations-slider > .inner');
 
     if ($deslider.length && !$deslider.hasClass('slick-initialized')) {
-        $('<div class="outSlider-arrows"></div>').insertBefore($deslider);
-
-        $('.outSlider-arrows').append('<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>');
-        $('.outSlider-arrows').append('<button class="slick-next slick-arrow out-next" type="button">Next</button>');
+        const $deArrowContainer = $('<div class="outSlider-arrows"></div>').insertBefore($deslider);
+        
+        const $dePrev = $(`<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>`);
+        const $deNext = $(`<button class="slick-next slick-arrow out-next" type="button">Next</button>`);
+        $deArrowContainer.append($dePrev).append($deNext);
 
         $deslider.slick({
             slidesToShow: 4,
             autoplay: false,
-            appendArrows: $('.outSlider-arrows'),
-            prevArrow: $('.out-prev'),
-            nextArrow: $('.out-next'),
+            appendArrows: $deArrowContainer,
+            prevArrow: $dePrev,
+            nextArrow: $deNext,
             responsive: [
                 {
                     breakpoint: 993, 
@@ -42,17 +43,18 @@ jQuery(document).ready(function ($) {
     const $crslider = $('.cruise-slider > .inner');
 
     if ($crslider.length && !$crslider.hasClass('slick-initialized')) {
-        $('<div class="outSlider-arrows"></div>').insertBefore($crslider);
-
-        $('.outSlider-arrows').append('<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>');
-        $('.outSlider-arrows').append('<button class="slick-next slick-arrow out-next" type="button">Next</button>');
+        const $crArrowContainer = $('<div class="outSlider-arrows"></div>').insertBefore($crslider);
+        
+        const $crPrev = $(`<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>`);
+        const $crNext = $(`<button class="slick-next slick-arrow out-next" type="button">Next</button>`);
+        $crArrowContainer.append($crPrev).append($crNext);
 
         $crslider.slick({
             slidesToShow: 5,
             autoplay: false,
-            appendArrows: $('.outSlider-arrows'),
-            prevArrow: $('.out-prev'),
-            nextArrow: $('.out-next'),
+            appendArrows: $crArrowContainer,
+            prevArrow: $crPrev,
+            nextArrow: $crNext,
             responsive: [
                 {
                     breakpoint: 993, 
