@@ -54,7 +54,7 @@
     transform: translate(3px, 3px);
 }
 
-.btn-vp .main-heading-group>div {
+.btn-vp .main-heading-group>div, .btn-vp .main-heading-group>span {
   display:inline
 }
 
