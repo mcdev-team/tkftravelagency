@@ -667,6 +667,16 @@ div#preview-container > div {
 }
 
 /* Responsive */
+@media screen and (min-width: 1600px) {
+    .single-column-title-section-with-plane-n-plane-trail img.broken-line{
+        min-width: 379px;
+        float: right;
+    }
+    .single-column-title-section-with-plane-n-plane-trail img.plane-with-broken-line {
+        min-width: 379px;
+    }
+}
+
 @media screen and (min-width:993px){
   .header-section .mega-menu-container .nav-menu-ul > .nav-spacing-x {
     margin-left:40px!important
