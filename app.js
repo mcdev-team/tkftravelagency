@@ -44,7 +44,7 @@ jQuery(document).ready(function ($) {
             $deslider.css('margin-left', deContainerOffsetLeft);
         }
 
-        // updateDeSliderMargin();
+        updateDeSliderMargin();
         $(window).on('resize', updateDeSliderMargin);
     }
 
@@ -121,7 +121,7 @@ jQuery(document).ready(function ($) {
             $crslider.css('margin-left', crContainerOffsetLeft);
         }
 
-        // updateCrSliderMargin();
+        updateCrSliderMargin();
         $(window).on('resize', updateCrSliderMargin);
     }
     
