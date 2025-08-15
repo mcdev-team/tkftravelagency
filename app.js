@@ -15,8 +15,7 @@ jQuery(document).ready(function ($) {
             appendArrows: $deArrowContainer,
             prevArrow: $dePrev,
             nextArrow: $deNext,
-            variableWidth: true,
-             centerMode: false,
+            variableWidth: false,
             responsive: [
                 {
                     breakpoint: 1800, 
