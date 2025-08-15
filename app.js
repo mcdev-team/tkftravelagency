@@ -65,7 +65,7 @@ jQuery(document).ready(function ($) {
             nextArrow: $deNext
         });
     }
-
+ 
     // Cruise slider
     const $crslider = $('.cruise-slider > .inner');
 
