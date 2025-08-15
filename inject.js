@@ -94,7 +94,7 @@
             } else {
               rules = ruleOrObject;
               force = false;
-            }
+            } 
 
             if (force || document.querySelector(selector)) {
               mediaCSS += `${selector} { ${rules} }\n`;

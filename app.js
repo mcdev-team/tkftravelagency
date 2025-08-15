@@ -15,7 +15,15 @@ jQuery(document).ready(function ($) {
             appendArrows: $deArrowContainer,
             prevArrow: $dePrev,
             nextArrow: $deNext,
+            variableWidth: true,
             responsive: [
+                {
+                    breakpoint: 1800, 
+                    settings: {
+                    slidesToShow: 4,
+                    variableWidth: false
+                    }
+                },
                 {
                     breakpoint: 993, 
                     settings: {
@@ -24,7 +32,8 @@ jQuery(document).ready(function ($) {
                 }, {
                     breakpoint: 767, 
                     settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    centerMode: true
                     }
                 }
             ]
@@ -37,6 +46,24 @@ jQuery(document).ready(function ($) {
 
         updateDeSliderMargin();
         $(window).on('resize', updateDeSliderMargin);
+    }
+
+    // Mosaic slider
+    const $mosaicSlider = $('.mosaic-slider');
+
+    if ($mosaicSlider.length && !$mosaicSlider.hasClass('slick-initialized')) {
+        const $deArrowContainer = $('<div class="outSlider-arrows"></div>').insertBefore($mosaicSlider);
+        const $dePrev = $(`<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>`);
+        const $deNext = $(`<button class="slick-next slick-arrow out-next" type="button">Next</button>`);
+        $deArrowContainer.append($dePrev).append($deNext);
+
+        $mosaicSlider.slick({
+            slidesToShow: 1,
+            autoplay: false,
+            appendArrows: $deArrowContainer,
+            prevArrow: $dePrev,
+            nextArrow: $deNext
+        });
     }
 
     // Cruise slider
