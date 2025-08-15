@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
         $deArrowContainer.append($dePrev).append($deNext);
 
         $deslider.slick({
-            slidesToShow: 4,
+            slidesToShow: 5,
             autoplay: false,
             appendArrows: $deArrowContainer,
             prevArrow: $dePrev,

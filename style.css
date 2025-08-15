@@ -318,7 +318,7 @@ div#preview-container > div {
     overflow: hidden;
     display: inline-flex !important;
     align-items: end;
-    max-width: 394px;
+    /* max-width: 394px; */
 }
 
 .destination-slider-section .destinations-slider .c-column .inner {
