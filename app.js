@@ -16,6 +16,7 @@ jQuery(document).ready(function ($) {
             prevArrow: $dePrev,
             nextArrow: $deNext,
             variableWidth: true,
+             centerMode: false,
             responsive: [
                 {
                     breakpoint: 1800, 
