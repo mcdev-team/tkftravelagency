@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
                 {
                     breakpoint: 1800, 
                     settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 4, 
                     variableWidth: false
                     }
                 },
@@ -40,12 +40,13 @@ jQuery(document).ready(function ($) {
         });
 
         function updateDeSliderMargin() {
-            const deContainerOffsetLeft = ($('.c-section > .inner').offset()?.left - 30) || 0;
+            const deContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
             $deslider.css('margin-left', deContainerOffsetLeft);
         }
 
         updateDeSliderMargin();
         $(window).on('resize', updateDeSliderMargin);
+
     }
 
     // Mosaic slider
