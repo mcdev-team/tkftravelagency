@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+    jQuery(document).ready(function ($) {
     // Destination slider
     const $deslider = $('.destinations-slider > .inner');
 
@@ -47,14 +47,6 @@ jQuery(document).ready(function ($) {
         // updateDeSliderMargin();
         // $(window).on('resize', updateDeSliderMargin);
          
-        function updateDeSliderMargin() {
-            const deContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
-            $deslider.css('margin-left', deContainerOffsetLeft - 30); 
-        } 
-
-        updateDeSliderMargin();
-        jQuery(window).on('resize', updateDeSliderMargin);
-
     }
 
     // Mosaic slider
@@ -123,15 +115,15 @@ jQuery(document).ready(function ($) {
                     }
                 }
             ]
-        });
+        }); 
 
-        function updateCrSliderMargin() {
-            const crContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
-            $crslider.css('margin-left', crContainerOffsetLeft);
-        }
+    function updateDeSliderMargin() {
+        const deContainerOffsetLeft = (jQuery('.c-section > .inner').offset()?.left || 0);
+        $deslider.css('margin-left', deContainerOffsetLeft);
+    }
 
-        updateCrSliderMargin();
-        $(window).on('resize', updateCrSliderMargin);
+    updateDeSliderMargin();
+    jQuery(window).on('resize', updateDeSliderMargin);
     }
     
     // Testimonials slider

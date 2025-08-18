@@ -1,3 +1,4 @@
+
 /*✈️ Styling for T.K.F Travel Agency 🛳️*/
 
 /* Globals */
@@ -403,6 +404,10 @@ div#preview-container > div {
 .destination-slider-section .destinations-slider .c-column:hover .c-paragraph::after {
     transform-origin: 5px 5px;
 }
+.destination-slider-section .slick-slide:hover .c-paragraph:after {
+    transform: translate(6px, 6px);
+    filter: drop-shadow(2px 4px 6px rgba(255, 255, 255, .5));
+}
 
 /* Featured resorts section */
 .featured-section .check-list-row {
@@ -793,9 +798,7 @@ div#preview-container > div {
     .destination-slider-section .destinations-slider .c-column {
         max-width: unset;
     }
-    .why-choose-section .row-boxes.row-boxes-first {
-        margin-bottom: 15px;
-    }
+
     .why-choose-section .row-boxes > .inner > .c-column {
         padding: 20px 12px 20px;
     } 
@@ -805,6 +808,11 @@ div#preview-container > div {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .why-choose-section .row-boxes.row-boxes-first {
+        margin-bottom: 15px;
+    }
+}
 @media screen and (min-width:993px){
   .header-section .mega-menu-container .nav-menu-ul > .nav-spacing-x {
     margin-left:40px!important
