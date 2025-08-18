@@ -1,4 +1,3 @@
-
 /*✈️ Styling for T.K.F Travel Agency 🛳️*/
 
 /* Globals */
@@ -56,11 +55,11 @@
 }
 
 .btn-vp .main-heading-group>div, .btn-vp .main-heading-group>span {
-  display:inline
+    display: inline
 }
 
 .destinations-slider > .inner {
-  transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 /* Icon links */
@@ -120,7 +119,7 @@
     overflow: visible !important;
 }
 
-.social-media-links .photo-video-gallery-grid-item{
+.social-media-links .photo-video-gallery-grid-item {
     transition: transform 0.3s cubic-bezier(.25,.8,.25,1),
     box-shadow 0.3s cubic-bezier(.25,.8,.25,1),
     filter 0.3s cubic-bezier(.25,.8,.25,1);
@@ -128,13 +127,13 @@
     border-radius: 100% !important;
 }
 
-.social-media-links .photo-video-gallery-grid-item:hover{
+.social-media-links .photo-video-gallery-grid-item:hover {
     transform: scale(1.15) rotate(-8deg);
     box-shadow: 0 8px 24px rgba(0,0,0,0.18), 0 0 0 4px #00c3ff55;
     filter: brightness(1.15) saturate(1.3);
 }
 
-.social-media-links .photo-video-gallery-grid-item:focus{
+.social-media-links .photo-video-gallery-grid-item:focus {
     transform: scale(0.98) rotate(0deg);
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
@@ -150,8 +149,8 @@ div#preview-container {
 
 .section-heading-title strong {
     position: relative;
-  display:inline-block;
-  white-space-collapse: break-spaces;
+    display: inline-block;
+    white-space-collapse: break-spaces;
 }
 
 .section-heading-title strong:before {
@@ -221,7 +220,7 @@ div#preview-container > div {
 
 /* Blue checked list */
 .blue-checked-list ul {
-    list-style-image:var(--url-blue-check-icon)
+    list-style-image: var(--url-blue-check-icon)
 }
 /*.blue-checked-list ul {
     padding: unset !important;
@@ -270,7 +269,7 @@ div#preview-container > div {
 }
 
 .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop .site-mobile-logo {
-  display: none;
+    display: none;
 }
 
 /* Image paint section */
@@ -282,16 +281,16 @@ div#preview-container > div {
     height: 145px;
 }
 
-.image-paint-section.up-side{
-  background: url(https://assets.cdn.filesafe.space/9yj6LUxLIMAPfJH3kcq3/media/686f3e0fe9ff4c6375b0c6cb.webp) no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
+.image-paint-section.up-side {
+    background: url(https://assets.cdn.filesafe.space/9yj6LUxLIMAPfJH3kcq3/media/686f3e0fe9ff4c6375b0c6cb.webp) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
-.image-paint-section.down-side{
-  background: url(https://assets.cdn.filesafe.space/9yj6LUxLIMAPfJH3kcq3/media/686b9889d55cfe704bcba840.webp) no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
+.image-paint-section.down-side {
+    background: url(https://assets.cdn.filesafe.space/9yj6LUxLIMAPfJH3kcq3/media/686b9889d55cfe704bcba840.webp) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
 /* Top destination section */
@@ -343,19 +342,19 @@ div#preview-container > div {
 }
 
 .outSlider-arrows {
-  display:flex;
-  gap:10px;
-  justify-content:flex-end;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom:20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .destinations-slider .slick-arrow {
-  z-index: 1;
-  position:relative;
-  left:auto;
-  right:auto;
+    z-index: 1;
+    position: relative;
+    left: auto;
+    right: auto;
     background-color: var(--color-white) !important;
     border-radius: var(--size-border-radius-full);
     width: var(--size-slick-arrow-width);
@@ -385,12 +384,14 @@ div#preview-container > div {
     background-size: 42%;
     background-position: 63%;
 }
+
 .destination-slider-section .destinations-slider .c-column .c-paragraph {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
+
 .destination-slider-section .destinations-slider .c-column .c-paragraph::after {
     content: '';
     min-width: 24px;
@@ -401,9 +402,11 @@ div#preview-container > div {
     background-position: center;
     transition: all 0.3s;
 }
+
 .destination-slider-section .destinations-slider .c-column:hover .c-paragraph::after {
     transform-origin: 5px 5px;
 }
+
 .destination-slider-section .slick-slide:hover .c-paragraph:after {
     transform: translate(6px, 6px);
     filter: drop-shadow(2px 4px 6px rgba(255, 255, 255, .5));
@@ -422,18 +425,18 @@ div#preview-container > div {
 }
 
 .cruise-slider .slick-track {
-  height:100%
+    height: 100%
 }
 
-#app .cruise-slider .slick-track .slick-slide>.inner{
-  justify-content: flex-start!important;
+#app .cruise-slider .slick-track .slick-slide>.inner {
+    justify-content: flex-start!important;
 }
 
 .cruise-slider .slick-arrow {
     z-index: 1;
     position: relative;
     left: auto;
-    right:auto;
+    right: auto;
     background-color: var(--color-primary-blue) !important;
     border-radius: var(--size-border-radius-full);
     width: var(--size-slick-arrow-width);
@@ -450,7 +453,7 @@ div#preview-container > div {
     top: 0;
     background-size: 42%;
     background-position: center;
-    filter:brightness(9);
+    filter: brightness(9);
 }
 
 .cruise-slider .slick-prev:before {
@@ -470,7 +473,7 @@ div#preview-container > div {
 }
 
 #app .cruise-slider > .inner.slick-initialized {
-  display:block
+    display: block
 }
 
 .cruise-slider > .inner > .c-column {
@@ -606,6 +609,7 @@ div#preview-container > div {
     padding: 23px 29px;
     overflow: hidden;
 }
+
 .mosaic-gallery.top-destinations .image .bg-image {
     position: absolute;
     left: 0;
@@ -615,6 +619,7 @@ div#preview-container > div {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .mosaic-gallery.top-destinations .image:before {
     content: '';
     position: absolute;
@@ -661,18 +666,20 @@ div#preview-container > div {
     color: unset;
     filter: brightness(10);
 }
-.mosaic-slider-widget .outSlider-arrows .slick-prev:before{
+
+.mosaic-slider-widget .outSlider-arrows .slick-prev:before {
     background: var(--url-slick-prev-arrow) no-repeat;
     background-position: 42% 50% !important;
 }
 
-.mosaic-slider-widget .outSlider-arrows .slick-next:before{
+.mosaic-slider-widget .outSlider-arrows .slick-next:before {
     background: var(--url-slick-next-arrow) no-repeat;
 }
 
 .mosaic-slider-widget .outSlider-arrows .slick-prev {
     left: -33px;
 }
+
 .mosaic-slider-widget .outSlider-arrows .slick-next {
     right: -33px;
 }
@@ -779,10 +786,11 @@ div#preview-container > div {
 
 /* Responsive */
 @media screen and (min-width: 1600px) {
-    .single-column-title-section-with-plane-n-plane-trail img.broken-line{
+    .single-column-title-section-with-plane-n-plane-trail img.broken-line {
         min-width: 379px;
         float: right;
     }
+
     .single-column-title-section-with-plane-n-plane-trail img.plane-with-broken-line {
         min-width: 379px;
     }
@@ -801,9 +809,9 @@ div#preview-container > div {
 
     .why-choose-section .row-boxes > .inner > .c-column {
         padding: 20px 12px 20px;
-    } 
+    }
 
-    .why-choose-section .row-boxes > .inner .blue-column-box h3{
+    .why-choose-section .row-boxes > .inner .blue-column-box h3 {
         font-size: 18px !important;
     }
 }
@@ -813,10 +821,11 @@ div#preview-container > div {
         margin-bottom: 15px;
     }
 }
-@media screen and (min-width:993px){
-  .header-section .mega-menu-container .nav-menu-ul > .nav-spacing-x {
-    margin-left:40px!important
-  }
+
+@media screen and (min-width:993px) {
+    .header-section .mega-menu-container .nav-menu-ul > .nav-spacing-x {
+        margin-left: 40px!important
+    }
 }
 
 @media (max-width: 1399px) and (min-width: 1024px) {
@@ -826,9 +835,9 @@ div#preview-container > div {
 }
 
 @media screen and (max-width:1300px) {
-  .destinations-slider > .inner, .cruise-slider > .inner {
-    margin-left:0!important
-  }
+    .destinations-slider > .inner, .cruise-slider > .inner {
+        margin-left: 0!important
+    }
 }
 
 @media (max-width: 1300px) and (min-width: 768px) {
@@ -880,17 +889,17 @@ div#preview-container > div {
     }
 }
 
-@media screen and (max-width:992px) and (min-width:481px){
-  .footer-bottom-section .c-paragraph .text-output {
-    text-align:center
-  }
+@media screen and (max-width:992px) and (min-width:481px) {
+    .footer-bottom-section .c-paragraph .text-output {
+        text-align: center
+    }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
 
-  .header-section .mega-menu-container .nav-menu-ul > .nav-spacing-x {
-    margin-left:20px!important
-  }
+    .header-section .mega-menu-container .nav-menu-ul > .nav-spacing-x {
+        margin-left: 20px!important
+    }
 
     .image-paint-section > .bg {
         background-size: 154% 97% !important;
@@ -953,46 +962,51 @@ div#preview-container > div {
     .mosaic-gallery.top-destinations .row.row-2 {
         flex-wrap: wrap;
     }
+
     .mosaic-gallery.top-destinations .row.row-2 .img-2, .mosaic-gallery.top-destinations .row.row-2 .img-1 {
         width: calc(50% - 10px);
-    } 
+    }
+
     .mosaic-gallery.top-destinations .row.row-2 .img-3 {
         max-width: 100%;
         width: 100%;
     }
+
     .mosaic-gallery.top-destinations .image {
-        min-height: 200px; 
+        min-height: 200px;
     }
+
     .destinations-slider .slick-list, .destinations-slider .slick-slider {
         max-width: 100% !important;
         width: 100% !important;
     }
+
     .destination-slider-section .destinations-slider .c-column {
         max-width: 92vw !important;
     }
+
     .destinations-slider {
         margin: -227px auto -1px!important;
     }
 }
 
 @media (max-width: 767px) and (min-width: 481px) {
-  .sticky-active .site-logo {
-    min-width:100px
-  }
-  
-    .destination-slider-section .destinations-slider .c-column{
-        margin: 0 7px!important;
-      padding: 25px!important
+    .sticky-active .site-logo {
+        min-width: 100px
     }
 
-  .cruise-with-confidence-section .cruise-slider .c-column{
-    margin: 0 15px!important;
-  }
+    .destination-slider-section .destinations-slider .c-column {
+        margin: 0 7px!important;
+        padding: 25px!important
+    }
 
-  .testimonials-slider .slick-list .slick-track .slick-slide {
-    margin: 0 10px!important;
-  }
+    .cruise-with-confidence-section .cruise-slider .c-column {
+        margin: 0 15px!important;
+    }
 
+    .testimonials-slider .slick-list .slick-track .slick-slide {
+        margin: 0 10px!important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1008,14 +1022,14 @@ div#preview-container > div {
         display: flex!important;
     }
 
-  .cruise-slider .slick-slide {
-    padding: 6px 6px 11px!important;
-  }
+    .cruise-slider .slick-slide {
+        padding: 6px 6px 11px!important;
+    }
 
-  .testimonials-section .testimonials-slider{
-    padding-left:30px!important;
-    padding-right:30px!important;
-  }
+    .testimonials-section .testimonials-slider {
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+    }
 
     .testimonials-slider .c-column > .inner {
         padding: 20px !important;
@@ -1030,7 +1044,7 @@ div#preview-container > div {
     }
 
     .section-heading-title h2 {
-        text-align:center!important
+        text-align: center!important
     }
 
     .your-journey-section .inner .c-row > .inner {
@@ -1075,55 +1089,66 @@ div#preview-container > div {
     .mosaic-gallery.top-destinations .column.column-2 {
         width: 100%;
     }
+
     .image-paint-section {
-      background-size: 208% 110%!important;
+        background-size: 208% 110%!important;
     }
+
     .destination-slider-section .destinations-slider .c-column {
-      min-height: 300px;
-  }
+        min-height: 300px;
+    }
 
-  .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop .site-mobile-logo a {
-      display: inline-block;
-      position: absolute;
-      top: 20px;
-      left: 0;
-  }
-  .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop li {
-      margin-bottom: 0!important;
-  }
+    .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop .site-mobile-logo a {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 0;
+    }
 
-  .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop .site-mobile-logo a img {
-      max-width: 100px;
-  }
+    .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop li {
+        margin-bottom: 0!important;
+    }
 
-  .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop .x-icon {
-      margin-top: -12px!important;
-  }
-  .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop .site-mobile-logo {
-      position: relative;
-      margin-bottom: 30px!important;
-  }
+    .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop .site-mobile-logo a img {
+        max-width: 100px;
+    }
+
+    .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop .x-icon {
+        margin-top: -12px!important;
+    }
+
+    .header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop .site-mobile-logo {
+        position: relative;
+        margin-bottom: 30px!important;
+    }
+
     .why-choose-section .row-boxes > .inner > .c-column {
         min-height: 160px;
         display: flex;
         align-items: center;
     }
+
     .destination-slider-section .destinations-slider .c-column {
         max-width: 93vw !important;
     }
+
     .mosaic-gallery.top-destinations .row-1 .img-2, .mosaic-gallery.top-destinations .row-2 .img-3 {
         min-width: 100% !important;
         max-width: 100% !important;
     }
+
     .mosaic-slider .slick-track:before, .mosaic-slider .slick-track:after {
         display: none;
     }
+
     .mosaic-gallery.top-destinations .row {
         max-width: 85vw;
     }
+
     .mosaic-slider-widget .outSlider-arrows .slick-prev {
         left: -27px;
     }
+
     .mosaic-slider-widget .outSlider-arrows .slick-next {
         right: -27px;
     }
@@ -1136,9 +1161,9 @@ div#preview-container > div {
 }
 
 @media screen and (max-width:480px) {
-  .c-paragraph > .text-output {
-    text-justify: distribute;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-  }
+    .c-paragraph > .text-output {
+        text-justify: distribute;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+    }
 } 

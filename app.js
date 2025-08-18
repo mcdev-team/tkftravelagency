@@ -1,3 +1,4 @@
+
     jQuery(document).ready(function ($) {
     // Destination slider
     const $deslider = $('.destinations-slider > .inner');
@@ -39,13 +40,13 @@
             ]
         });
 
-        // function updateDeSliderMargin() {
-        //     const deContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
-        //     $deslider.css('margin-left', deContainerOffsetLeft);
-        // }
+        function updateDeSliderMargin() {
+            const deContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
+            $deslider.css('margin-left', deContainerOffsetLeft);
+        }
 
-        // updateDeSliderMargin();
-        // $(window).on('resize', updateDeSliderMargin);
+        updateDeSliderMargin();
+        $(window).on('resize', updateDeSliderMargin);
          
     }
 
@@ -119,11 +120,12 @@
 
     function updateDeSliderMargin() {
         const deContainerOffsetLeft = (jQuery('.c-section > .inner').offset()?.left || 0);
-        $deslider.css('margin-left', deContainerOffsetLeft);
+        $crslider.css('margin-left', deContainerOffsetLeft);
     }
 
     updateDeSliderMargin();
     jQuery(window).on('resize', updateDeSliderMargin);
+    
     }
     
     // Testimonials slider
@@ -184,3 +186,4 @@
     .prepend('<li class="site-mobile-logo"><a href="https://app.venderflow.com/v2/preview/GV97uqCmpGt1EOfhi9Tl"><img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/9yj6LUxLIMAPfJH3kcq3/media/686785c00c858a7b675da411.webp"></a></li>')
     }, 1000)
 })
+
