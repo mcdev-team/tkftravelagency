@@ -785,6 +785,12 @@ div#preview-container > div {
 }
 
 /* Responsive */
+
+@media (max-width: 1900px) {
+    .destination-slider-section  {
+        margin-left: unset!important;
+    }
+}
 @media screen and (min-width: 1600px) {
     .single-column-title-section-with-plane-n-plane-trail img.broken-line {
         min-width: 379px;
