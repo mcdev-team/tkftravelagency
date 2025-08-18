@@ -40,13 +40,13 @@
             ]
         });
 
-        function updateDeSliderMargin() {
+        function updateDeSliderMargin1() {
             const deContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
             $deslider.css('margin-left', deContainerOffsetLeft);
         }
 
-        updateDeSliderMargin();
-        $(window).on('resize', updateDeSliderMargin);
+        updateDeSliderMargin1();
+        $(window).on('resize', updateDeSliderMargin1);
          
     }
 
