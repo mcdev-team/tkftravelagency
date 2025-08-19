@@ -7,7 +7,6 @@ function loadScript(src, callback) {
     }
     document.head.appendChild(script)
 }
-
 loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
     loadScript("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", function () {
         jQuery(function ($) {
@@ -29,7 +28,7 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
                     responsive: [
                         { breakpoint: 1800, settings: { slidesToShow: 4 } },
                         { breakpoint: 993, settings: { slidesToShow: 2 } },
-                        { breakpoint: 767, settings: { slidesToShow: 1, centerMode: true } }
+                        { breakpoint: 767, settings: { slidesToShow: 1, centerMode: false } }
                     ]
                 });
                 function updateDeSliderMargin1() {

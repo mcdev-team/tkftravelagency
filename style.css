@@ -314,7 +314,7 @@ div#preview-container > div {
 
 .destination-slider-section .destinations-slider .c-column {
     min-height: 363px;
-    border-radius: 14px;
+    border-radius: 14px; 
     overflow: hidden;
     display: inline-flex !important;
     align-items: end;
@@ -1135,7 +1135,7 @@ div#preview-container > div {
     }
 
     .destination-slider-section .destinations-slider .c-column {
-        max-width: 93vw !important;
+        max-width: unset !important;
     }
 
     .mosaic-gallery.top-destinations .row-1 .img-2, .mosaic-gallery.top-destinations .row-2 .img-3 {
