@@ -24,7 +24,7 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
                     appendArrows: $deArrowContainer,
                     prevArrow: $dePrev,
                     nextArrow: $deNext,
-                    variableWidth: false,
+                    variableWidth: false, 
                     responsive: [
                         { breakpoint: 1800, settings: { slidesToShow: 4 } },
                         { breakpoint: 993, settings: { slidesToShow: 2 } },

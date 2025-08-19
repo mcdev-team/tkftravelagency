@@ -1020,6 +1020,11 @@ div#preview-container > div {
         flex-direction: row;
     }
 
+    .hero-banner-section .page-title h1 {
+        font-size: 35px !important;
+        line-height: 1.5;
+    }  
+
     .check-list ul li:before {
         margin-top: 3px;
     }
