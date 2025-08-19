@@ -1158,6 +1158,11 @@ div#preview-container > div {
     .mosaic-slider-widget .outSlider-arrows .slick-next {
         right: -27px;
     }
+
+    .cruise-with-confidence-section .cruise-slider{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    } 
 }
 
 @media (max-width: 500px) {
