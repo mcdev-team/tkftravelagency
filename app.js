@@ -8,6 +8,7 @@ function loadScript(src, callback) {
     document.head.appendChild(script)
 }
 loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
+    jQuery.noConflict();
     loadScript("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", function () {
         jQuery(function ($) {
 
@@ -127,4 +128,5 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
 
         })
     })
+
 })
