@@ -1,23 +1,24 @@
+<script>
 function loadScript(src, callback) {
-    var script = document.createElement('script')
-    script.src = src
-    script.onload = callback
+    var script = document.createElement('script');
+    script.src = src;
+    script.onload = callback;
     script.onerror = function() {
-        setTimeout(function(){ loadScript(src, callback) }, 2000)
-    }
-    document.head.appendChild(script)
+        setTimeout(function(){ loadScript(src, callback); }, 2000);
+    };
+    document.head.appendChild(script);
 }
+
 loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
-    jQuery.noConflict();
     loadScript("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", function () {
         jQuery(function ($) {
 
             // Destination slider
-            const $deslider = $('.destinations-slider > .inner');
+            var $deslider = $('.destinations-slider > .inner');
             if ($deslider.length && !$deslider.hasClass('slick-initialized')) {
-                const $deArrowContainer = $('<div class="outSlider-arrows"></div>').insertBefore($deslider);
-                const $dePrev = $(`<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>`);
-                const $deNext = $(`<button class="slick-next slick-arrow out-next" type="button">Next</button>`);
+                var $deArrowContainer = $('<div class="outSlider-arrows"></div>').insertBefore($deslider);
+                var $dePrev = $('<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>');
+                var $deNext = $('<button class="slick-next slick-arrow out-next" type="button">Next</button>');
                 $deArrowContainer.append($dePrev).append($deNext);
                 $deslider.slick({
                     slidesToShow: 5,
@@ -33,7 +34,8 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
                     ]
                 });
                 function updateDeSliderMargin1() {
-                    const deContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
+                    var $container = $('.c-section > .inner');
+                    var deContainerOffsetLeft = $container.length ? $container.offset().left : 0;
                     $deslider.css('margin-left', deContainerOffsetLeft);
                 }
                 updateDeSliderMargin1();
@@ -41,27 +43,27 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
             }
 
             // Mosaic slider
-            const $mosaicSlider = $('.mosaic-slider');
+            var $mosaicSlider = $('.mosaic-slider');
             if ($mosaicSlider.length && !$mosaicSlider.hasClass('slick-initialized')) {
-                const $deArrowContainer = $('<div class="outSlider-arrows"></div>').insertBefore($mosaicSlider);
-                const $dePrev = $(`<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>`);
-                const $deNext = $(`<button class="slick-next slick-arrow out-next" type="button">Next</button>`);
-                $deArrowContainer.append($dePrev).append($deNext);
+                var $moArrowContainer = $('<div class="outSlider-arrows"></div>').insertBefore($mosaicSlider);
+                var $moPrev = $('<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>');
+                var $moNext = $('<button class="slick-next slick-arrow out-next" type="button">Next</button>');
+                $moArrowContainer.append($moPrev).append($moNext);
                 $mosaicSlider.slick({
                     slidesToShow: 1,
                     autoplay: false,
-                    appendArrows: $deArrowContainer,
-                    prevArrow: $dePrev,
-                    nextArrow: $deNext
+                    appendArrows: $moArrowContainer,
+                    prevArrow: $moPrev,
+                    nextArrow: $moNext
                 });
             }
 
             // Cruise slider
-            const $crslider = $('.cruise-slider > .inner');
+            var $crslider = $('.cruise-slider > .inner');
             if ($crslider.length && !$crslider.hasClass('slick-initialized')) {
-                const $crArrowContainer = $('<div class="outSlider-arrows"></div>').insertBefore($crslider);
-                const $crPrev = $(`<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>`);
-                const $crNext = $(`<button class="slick-next slick-arrow out-next" type="button">Next</button>`);
+                var $crArrowContainer = $('<div class="outSlider-arrows"></div>').insertBefore($crslider);
+                var $crPrev = $('<button class="slick-prev slick-arrow out-prev" type="button">Prev</button>');
+                var $crNext = $('<button class="slick-next slick-arrow out-next" type="button">Next</button>');
                 $crArrowContainer.append($crPrev).append($crNext);
                 $crslider.slick({
                     slidesToShow: 6,
@@ -78,7 +80,8 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
                     ]
                 });
                 function updateDeSliderMargin() {
-                    const deContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
+                    var $container = $('.c-section > .inner');
+                    var deContainerOffsetLeft = $container.length ? $container.offset().left : 0;
                     $crslider.css('margin-left', deContainerOffsetLeft);
                 }
                 updateDeSliderMargin();
@@ -115,7 +118,7 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
             });
 
             $('.copyright-text').children().each(function() {
-                if ($(this).text().toLowerCase().includes('year')) {
+                if ($(this).text().toLowerCase().indexOf('year') !== -1) {
                     $(this).text($(this).text().replace(/year/gi, new Date().getFullYear()));
                     return false;
                 }
@@ -123,10 +126,11 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
 
             setTimeout(function() {
                 $('.header-section .mega-menu-container .nav-menu-ul.nav-menu-desktop')
-                    .prepend('<li class="site-mobile-logo"><a href="https://app.venderflow.com/v2/preview/GV97uqCmpGt1EOfhi9Tl"><img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/9yj6LUxLIMAPfJH3kcq3/media/686785c00c858a7b675da411.webp"></a></li>')
-            }, 1000)
+                    .prepend('<li class="site-mobile-logo"><a href="https://app.venderflow.com/v2/preview/GV97uqCmpGt1EOfhi9Tl"><img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/9yj6LUxLIMAPfJH3kcq3/media/686785c00c858a7b675da411.webp"></a></li>');
+            }, 1000);
 
-        })
-    })
+        });
+    });
+});
+</script>
 
-})
