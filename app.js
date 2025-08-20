@@ -33,7 +33,8 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
                     ]
                 });
                 function updateDeSliderMargin1() {
-                    const deContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
+                    const offsetObj = $('.c-section > .inner').offset();
+                    const deContainerOffsetLeft = offsetObj ? offsetObj.left : 0;
                     $deslider.css('margin-left', deContainerOffsetLeft);
                 }
                 updateDeSliderMargin1();
@@ -78,7 +79,8 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
                     ]
                 });
                 function updateDeSliderMargin() {
-                    const deContainerOffsetLeft = $('.c-section > .inner').offset()?.left || 0;
+                    const offsetObj = $('.c-section > .inner').offset();
+                    const deContainerOffsetLeft = offsetObj ? offsetObj.left : 0;
                     $crslider.css('margin-left', deContainerOffsetLeft);
                 }
                 updateDeSliderMargin();
@@ -130,3 +132,4 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
     })
 
 })
+
