@@ -33,9 +33,12 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
                     ]
                 });
                 function updateDeSliderMargin1() {
-                    const offsetObj = $('.c-section > .inner').offset();
-                    const deContainerOffsetLeft = offsetObj ? offsetObj.left : 0;
-                    $deslider.css('margin-left', deContainerOffsetLeft);
+                    var offsetObj = $('.c-section > .inner').offset();
+                    var deContainerOffsetLeft = offsetObj ? offsetObj.left : 0;
+                
+                    if ($deslider && $deslider.length) {
+                        $deslider.css('margin-left', deContainerOffsetLeft);
+                    }
                 }
                 updateDeSliderMargin1();
                 $(window).on('resize', updateDeSliderMargin1);
@@ -78,10 +81,13 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
                         { breakpoint: 500, settings: { slidesToShow: 1 } }
                     ]
                 });
-                function updateDeSliderMargin() {
-                    const offsetObj = $('.c-section > .inner').offset();
-                    const deContainerOffsetLeft = offsetObj ? offsetObj.left : 0;
-                    $crslider.css('margin-left', deContainerOffsetLeft);
+               function updateDeSliderMargin() {
+                    var offsetObj = $('.c-section > .inner').offset();
+                    var deContainerOffsetLeft = offsetObj ? offsetObj.left : 0;
+                
+                    if ($crslider && $crslider.length) {
+                        $crslider.css('margin-left', deContainerOffsetLeft);
+                    }
                 }
                 updateDeSliderMargin();
                 $(window).on('resize', updateDeSliderMargin);
@@ -132,4 +138,5 @@ loadScript("https://code.jquery.com/jquery-3.6.0.min.js", function () {
     })
 
 })
+
 
